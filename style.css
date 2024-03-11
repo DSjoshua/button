@@ -18,12 +18,12 @@
 }
 
 .cards .red {
-  background-color: #f43f5e;
+  background-color: #141be8;
   text-decoration: none;
 }
 
 .cards .blue {
-  background-color: #3b82f6;
+  background-color: #f80404;
   text-decoration: none;
 }
 
@@ -82,3 +82,4 @@
         transform: translateY(100vh);
     }
 }
+
