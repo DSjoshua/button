@@ -12,7 +12,7 @@
 
 .cards {
   display: flex;
-  flex-direction: column; /* Change to row for horizontal arrangement */
+  flex-direction: row; /* Change to row for horizontal arrangement */
   gap: 15px;
   margin-top: 20px;
 }
