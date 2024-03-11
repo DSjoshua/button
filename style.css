@@ -12,7 +12,7 @@
 
 .cards {
   display: flex;
-  flex-direction: row; /* Change to row for horizontal arrangement */
+  flex-direction: column; /* Change to row for horizontal arrangement */
   gap: 15px;
   margin-top: 20px;
 }
@@ -35,7 +35,7 @@
 
 .cards .card {
   flex: 1;
-  max-width: 300px;
+  max-width: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
