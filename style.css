@@ -1,46 +1,47 @@
-
-    .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: bisque;
-  }
-  .content {
-    text-align: center;
-  
-  }
-    .cards {
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: bisque;
+}
+
+.content {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal arrangement */
   gap: 15px;
   margin-top: 20px;
 }
 
-.cards .red {
+.card.red {
   background-color: #141be8;
   text-decoration: none;
 }
 
-.cards .blue {
+.card.blue {
   background-color: #f80404;
   text-decoration: none;
 }
 
-.cards .green {
+.card.green {
   background-color: #22c55e;
   margin-bottom: 350px;
   text-decoration: none;
 }
 
 .cards .card {
+  flex: 1;
+  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   height: 100px;
-  width: 250px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
@@ -53,7 +54,7 @@
 }
 
 .cards .card p.second-text {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .cards .card:hover {
@@ -66,20 +67,26 @@
 }
 
 .falling-heart {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    font-size: 20px; /* Adjust font size for heart */
-    color: red; /* Color of the heart */
-    animation: fall 5s linear infinite;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: red;
+  animation: fall 5s linear infinite;
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
 
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+  .cards .card {
+    width: 90%;
+  }
+}
